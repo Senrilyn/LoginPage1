@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Montserrat:wght@500&family=Oswald:wght@300&family=Poppins:ital,wght@0,200;0,300;1,200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  background-color: beige;
+  display: flex;
+  padding: 25px;
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+}
+.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+.right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.right input {
+  padding: 16px;
+  width: 300px;
+  border: none;
+  border-radius: 16px;
+  box-shadow: -11px 9px 48px -1px rgba(214, 165, 165, 0.56);
+  -webkit-box-shadow: -11px 9px 48px -1px rgba(214, 165, 165, 0.56);
+  -moz-box-shadow: -11px 9px 48px -1px rgba(214, 165, 165, 0.56);
+}
+.recovery-pass {
+  display: flex;
+  width: 350px;
+  justify-content: flex-end;
+}
+.right p {
+  font-size: 16px;
+}
+.recovery-pass p {
+  font-size: 13px;
+}
+.sign-in-button {
+  color: white;
+  background-color: #80b652;
+  transition: all 0.2s ease-in;
+}
+.sign-in-button:hover {
+  border: 1px solid #80b652;
+  background-color: white;
+  color: #80b652;
+}
+.register {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+span {
+  color: rgb(48, 96, 138);
+}
+span:hover {
+  color: rgb(62, 158, 243);
+  cursor: pointer;
+}
+.seperator {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.line {
+  height: 3px;
+  width: 100px;
+  background: rgb(239, 238, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(239, 238, 255, 1) 0%,
+    rgba(235, 245, 230, 1) 35%,
+    rgba(177, 244, 160, 1) 100%
+  );
+}
+.line:first-child {
+  transform: rotate(180deg);
+}
+.social-icons img {
+  height: 30px;
+  width: 30px;
+}
+.social-icons {
+  display: flex;
+  gap: 24px;
+}
